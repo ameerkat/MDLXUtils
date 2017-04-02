@@ -1,0 +1,95 @@
+﻿
+        public static class Types
+        {
+            // Geoset
+            public const Type GeosetTranslation = typeof(Float3);
+            public const Type GeosetRotation = typeof(Float4);
+            public const Type GeosetScaling = typeof(Float3);
+            public const Type GeosetAlpha = typeof(float);
+            public const Type GeosetColor = typeof(Color);
+
+            // Texture
+            public const Type TextureTranslation = typeof(Float3);
+            public const Type TextureRotation = typeof(Float4);
+            public const Type TextureScaling = typeof(Float3);
+
+            // Camera
+            public const Type CameraPositionTranslation = typeof(Float3);
+            public const Type CameraTargetTranslation = typeof(Float3);
+            // Note this is contested, GhostWolf says UInt32 for CameraRotation
+            public const Type CameraRotation = typeof(float);
+
+            // Material
+            public const Type MaterialTextureId = typeof(UInt32);
+            public const Type MaterialAlpha = typeof(float);
+
+            // Attachment
+            public const Type AttachmentVisibility = typeof(float);
+
+            // Light
+            public const Type LightVisibility = typeof(float);
+            public const Type LightColor = typeof(Color);
+            public const Type LightIntensity = typeof(float);
+            public const Type LightAmbientColor = typeof(Color);
+            public const Type LightAmbientIntensity = typeof(float);
+
+            // Particle Emitters
+            public const Type ParticleEmitterVisibility = typeof(float);
+            public const Type ParticleEmitter2Visibility = typeof(float);
+            public const Type ParticleEmitter2EmissionRate = typeof(float);
+            public const Type ParticleEmitter2Width = typeof(float);
+            public const Type ParticleEmitter2Length = typeof(float);
+            public const Type ParticleEmitter2Speed = typeof(float);
+
+            // Ribbon Emitter
+            public const Type RibbonEmitterVisibility = typeof(float);
+            public const Type RibbonEmitterHeightAbove = typeof(float);
+            public const Type RibbonEmitterHeightBelow = typeof(float);
+        }
+
+        // This might be useless
+        public static IDictionary<String, Type> AnimationChunkTypeMap = new Dictionary<String, Type> {
+            // Geoset
+            { Headers.GeosetTranslation, Types.GeosetTranslation },
+            { Headers.GeosetRotation, Types.GeosetRotation },
+            { Headers.GeosetScaling, Types.GeosetScaling },
+            { Headers.GeosetAlpha, Types.GeosetAlpha },
+            { Headers.GeosetColor, Types.GeosetColor },
+
+            // Texture
+            { Headers.TextureTranslation, Types.TextureTranslation },
+            { Headers.TextureRotation, Types.TextureRotation },
+            { Headers.TextureScaling, Types.TextureScaling },
+
+            // Camera
+            { Headers.CameraPositionTranslation, Types.CameraPositionTranslation },
+            { Headers.CameraTargetTranslation, Types.CameraTargetTranslation },
+            { Headers.CameraRotation, Types.CameraRotation }, // Note this is contested, GhostWolf says UInt32
+            
+            // Material
+            { Headers.MaterialTextureId, typeof(UInt32) },
+            { Headers.MaterialAlpha, typeof(float) },
+
+            // Attachment
+            { Headers.AttachmentVisibility, typeof(float) },
+
+            // Light
+            { Headers.LightVisibility, typeof(float) },
+            { Headers.LightColor, typeof(Color) },
+            { Headers.LightIntensity, typeof(float) },
+            { Headers.LightAmbientColor, typeof(Color) },
+            { Headers.LightAmbientIntensity, typeof(float) },
+
+            // Particle Emitters
+            { Headers.ParticleEmitterVisibility, typeof(float) },
+            { Headers.ParticleEmitter2Visibility, typeof(float) },
+            { Headers.ParticleEmitter2EmissionRate, typeof(float) },
+            { Headers.ParticleEmitter2Width, typeof(float) },
+            { Headers.ParticleEmitter2Length, typeof(float) },
+            { Headers.ParticleEmitter2Speed, typeof(float) },
+
+            // Ribbon Emitter
+            { Headers.RibbonEmitterVisibility, typeof(float) },
+            { Headers.RibbonEmitterHeightAbove, typeof(float) },
+            { Headers.RibbonEmitterHeightBelow, typeof(float) }
+        };
