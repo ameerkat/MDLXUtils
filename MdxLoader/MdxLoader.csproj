@@ -39,11 +39,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArraySizeHeader.cs" />
-    <Compile Include="HeaderAttribute.cs" />
-    <Compile Include="MDLX\Headers.cs" />
-    <Compile Include="MDLX\Model.cs" />
-    <Compile Include="MDLX\Types.cs" />
+    <Compile Include="Attributes\ArraySizeAttribute.cs" />
+    <Compile Include="Attributes\ExpectedValueAttribute.cs" />
+    <Compile Include="Attributes\HeaderAttribute.cs" />
+    <Compile Include="MDLX\V800\Headers.cs" />
+    <Compile Include="MDLX\V800\Model.cs" />
+    <Compile Include="MDLX\V800\Types.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
