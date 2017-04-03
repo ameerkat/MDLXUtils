@@ -7,8 +7,8 @@
     <ProjectGuid>{108F5DE7-40B8-45E2-BA83-F849B565A8AE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MdxLoader</RootNamespace>
-    <AssemblyName>MdxLoader</AssemblyName>
+    <RootNamespace>MdlxUtils</RootNamespace>
+    <AssemblyName>MdlxUtils</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
