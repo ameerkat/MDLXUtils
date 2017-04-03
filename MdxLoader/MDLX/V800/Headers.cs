@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MdxLoader.MDLX
+namespace MdxLoader.MDLX.V800
 {
     public static class MdxChunks
     {
@@ -20,12 +20,31 @@ namespace MdxLoader.MDLX
             public const string Materials = "MTLS";
             public const string TextureAnimation = "TXAN";
             public const string Geoset = "GEOS";
+            public const string GeosetAnimations = "GEOA";
+            public const string Bone = "BONE";
+            public const string Light = "LITE";
+            public const string Helper = "HELP";
+            public const string Attachment = "ATCH";
+            public const string Pivot = "PIVT";
+            public const string ParticleEmitter = "PREM";
+            public const string ParticleEmitter2 = "PRE2";
+            public const string RibbonEmitter = "RIBB";
+            public const string Tracks = "KEVT";
+            public const string EventObject = "EVTS";
+            public const string Camera = "CAMS";
+            public const string CollisionShape = "CLID";
 
             // Geoset Chunks
-            public const string GeosetVertexPosition = "VRTX";
+            public const string GeosetVertexPositions = "VRTX";
             public const string GeosetVertexNormals = "NRMS";
             public const string GeosetFaceTypeGroups = "PTYP";
             public const string GeosetFaceGroups = "PCNT";
+            public const string GeosetFaces = "PVTX";
+            public const string GeosetVertexGroups = "GNDX";
+            public const string GeosetMatrixGroups = "MTGC";
+            public const string GeosetMatrices = "MATS";
+            public const string GeosetTextureVertexGroups = "UVAS";
+            public const string GeosetTextureVertexPositions = "UVBS";
         }
     }
 
